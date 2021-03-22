@@ -10,8 +10,24 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
+function convertSecondsToHours(seconds) {
+    return seconds / 3600;
+}
+
+function setProgressBar(value) {
+    var bar = document.getElementById("zazenprogress");
+    var ariaValue = value * 100;
+    var widthValue = "width: " + ariaValue + "%";
+    bar.setAttribute("aria-valuenow", ariaValue);
+    bar.setAttribute("style", widthValue);
+}
+
 console.log("Hello")
 loadJSON(function(json) {
     console.log(json);
-    document.getElementById("content").textContent = json;
+    var hours = convertSecondsToHours(json[0]["duration"]);
+    document.getElementById("content").textContent = hours + " / 10,000 hours";
+
+    progressValue = hours / 10000;
+    setProgressBar(progressValue);
 })
