@@ -56,7 +56,12 @@
  },
  {
    "place": "Palo Alto",
-   "start": 1618789500,
+   "start": 1618703100,
    "duration": 900
+ },
+ {
+   "place": "Palo Alto",
+   "start": 1618785900,
+   "duration": 1800
  }
 ]
