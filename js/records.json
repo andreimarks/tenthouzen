@@ -78,5 +78,10 @@
    "place": "Palo Alto",
    "start": 1621211400,
    "duration": 1800
- } 
+ }, 
+ {
+   "place": "Palo Alto",
+   "start": 1625128200,
+   "duration": 1800
+ }
 ]
